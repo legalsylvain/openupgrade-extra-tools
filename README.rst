@@ -23,9 +23,11 @@ Usage
 Get all the opened PRs defined in the issue "Migration to version xx"
 
 For each PR:
-* if all the dependencies are marked as "done" (or "nothing to do")
+
+* if all the dependencies are marked as "done" (or "nothing to do"):
     * remove the label 'Blocked by dependency' (if set)
     * set the label 'Dependency OK'
-* else,
+
+* else:
     * remove the label 'Dependency OK' (if set)
     * set the label 'Blocked by dependency'
