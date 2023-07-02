@@ -8,7 +8,7 @@ auth = Auth.Token(private_config.token)
 g = Github(auth=auth)
 repo = g.get_repo("OCA/OpenUpgrade")
 
-version = 14.0
+version = 16.0
 
 # Get Opened PRs
 _done_prs, opened_prs = tools._get_prs(repo, version)

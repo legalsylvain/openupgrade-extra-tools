@@ -4,7 +4,7 @@ import sys
 import urllib
 
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.INFO,
     format="[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s",
     handlers=[logging.StreamHandler(stream=sys.stdout)],
 )
