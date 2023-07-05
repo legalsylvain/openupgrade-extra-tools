@@ -49,6 +49,7 @@ def _get_comment_or_review(pr, content):
 
 
 for module_name, pr_number in opened_prs.items():
+    tools._logger.info(f"Handle PR #{pr_number} for module '{module_name}'")
     manifest = tools._get_manifest_module(repo, private_config.VERSION, module_name)
     if not manifest:
         # the module disappeared in the new version
